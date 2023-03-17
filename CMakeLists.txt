@@ -10,4 +10,5 @@ FetchContent_MakeAvailable(pcg_cpp)
 FetchContent_GetProperties(pcg_cpp)
 
 add_library(pcg-cpp INTERFACE)
-target_include_directories(pcg-cpp INTERFACE $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/${pcg_cpp_SOURCE_DIR}/include>)
+# target_include_directories(pcg-cpp INTERFACE $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/${pcg_cpp_SOURCE_DIR}/include>)
+target_include_directories(pcg-cpp INTERFACE $<BUILD_INTERFACE:${pcg_cpp_SOURCE_DIR}/include>)
